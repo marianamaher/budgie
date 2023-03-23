@@ -1,4 +1,46 @@
+.row{
+    color: rgb(81, 81, 81);
+    font-family: 'Palanquin', sans-serif;
+    /* making sure all text is same color */
+}
+#header-img{
+    width: 125px;
+}
+
 .indexContainer{
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(248, 248, 248);
     height: 100vh;
+}
+
+.homepageRow1{
+    padding-top: 150px;
+    text-align: center;
+}
+
+#homeText{
+    font-size: 30px;
+}
+
+#generateBudgetButton{
+    width: 150px;
+    height:40px;
+    border-radius: 5px;
+    font-size: 19px;
+    margin-right: 10px;
+}
+
+#savingTipsButton{
+    width: 150px;
+    height:40px;
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+#moneybag{
+    width: 20px;
+    padding-bottom: 5px;
+}
+#lamp{
+    width: 20px;
+    padding-bottom: 5px;
 }

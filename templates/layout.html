@@ -14,14 +14,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
     <!-- Page Title -->
-    <title>Budgie</title> 
+    <title>Budgie</title>
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.png"> 
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@300&display=swap" rel="stylesheet">
     </head>
 
     <body>    
         <!-- creating the navbar -->
     <nav class="navbar navbar-dark" style="background-color: #a10000;">
     <div class="container">
-        <a class="navbar-brand" href="/">BUGDIE</a>
+        <a class="navbar-brand" href="/"><img id="header-img" src="/static/images/logo.png" alt="website logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
