@@ -1,7 +1,46 @@
-{% extends "layout.html" %}
-
-{% block content %}
+{% extends "layout.html" %} {% block content %}
 
 <!-- content goes here -->
+<div class="bold_big">Monthly 50/30/20 Budget Calculator</div>
+<br />
+<div>
+  The 50/30/20 budget is a good tool to plan and understand on your spending.<br />
+</div>
+<div>
+  Enter your monthly after-tax income into this free budget calculator to create
+  a suggested budget.
+</div>
+<form id="Budget Calculator">
+  <h2>Budget Calculator</h2>
+  <p>
+    <label for="yearlyincomeaftertax">Yearly Income After Tax: </label>
+    <input
+      name="yearlyincome"
+      type="text"
+      size="10"
+      id="yearlyincome"
+      placeholder="000000"
+    />
+  </p>
+  <input type="button" value="Enter!" id="Enter" />
+</form>
+
+<div id="suggestedBudget">
+  <b>Your 50/30/20 Budget:</b>
+  <div id="budgetresult">
+    <div id="necessities">
+      <div>Necessities:</div>
+      <div id="computednecessity"></div>
+    </div>
+    <div id="Wants">
+      <div>Wants:</div>
+      <div id="computedwants"></div>
+    </div>
+    <div id="Savings">
+      <div>Savings:</div>
+      <div id="computedsavings"></div>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
