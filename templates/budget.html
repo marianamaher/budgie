@@ -1,44 +1,40 @@
 {% extends "layout.html" %} {% block content %}
 
 <!-- content goes here -->
-<div class="bold_big">Monthly 50/30/20 Budget Calculator</div>
-<br />
-<div>
-  The 50/30/20 budget is a good tool to plan and understand on your spending.<br />
-</div>
-<div>
-  Enter your monthly after-tax income into this free budget calculator to create
-  a suggested budget.
-</div>
-<form id="Budget Calculator">
-  <h2>Budget Calculator</h2>
-  <p>
-    <label for="yearlyincomeaftertax">Yearly Income After Tax: </label>
-    <input
-      name="yearlyincome"
-      type="text"
-      size="10"
-      id="yearlyincome"
-      placeholder="000000"
-    />
-  </p>
-  <input type="button" value="Enter!" id="Enter" />
-</form>
+<div class="budgetCalculatorContainer">
+  <div>
+    <h2>Budget Calculator</h2>
+    The 50/30/20 budget splits your take-home income into suggested spending in three categories: 50% for needs, 30% for wants and 20% for savings and debt repayment.
+    Enter your monthly after-tax income into this free budget calculator to generate a suggested budget.
+  </div>
+  <form id="budgetCalculator">
+      <label for="yearlyIncomeAfterTax">Yearly Income After Tax: </label>
+      <input
+        name="yearlyIncome"
+        type="text"
+        size="10"
+        id="yearlyincome"
+        placeholder="000000"
+      />
+    </p>
+    <input type="button" value="Enter!" id="Enter" />
+  </form>
 
-<div id="suggestedBudget">
-  <b>Your 50/30/20 Budget:</b>
-  <div id="budgetresult">
-    <div id="necessities">
-      <div>Necessities:</div>
-      <div id="computednecessity"></div>
-    </div>
-    <div id="Wants">
-      <div>Wants:</div>
-      <div id="computedwants"></div>
-    </div>
-    <div id="Savings">
-      <div>Savings:</div>
-      <div id="computedsavings"></div>
+  <div id="suggestedBudget">
+    <b>Your 50/30/20 Budget:</b>
+    <div id="budgetresult">
+      <div id="necessities">
+        <div>Necessities:</div>
+        <div id="computednecessity"></div>
+      </div>
+      <div id="Wants">
+        <div>Wants:</div>
+        <div id="computedwants"></div>
+      </div>
+      <div id="Savings">
+        <div>Savings:</div>
+        <div id="computedsavings"></div>
+      </div>
     </div>
   </div>
 </div>
