@@ -1,42 +1,38 @@
 {% extends "layout.html" %} {% block content %}
 
 <!-- content goes here -->
-<div class="budgetCalculatorContainer">
+<div class="row budgetCalculatorContainer">
   <div>
-    <h2>Budget Calculator</h2>
-    The 50/30/20 budget splits your take-home income into suggested spending in three categories: 50% for needs, 30% for wants and 20% for savings and debt repayment.
-    Enter your monthly after-tax income into this free budget calculator to generate a suggested budget.
+    <h2><b>Budget Calculator</b></h2>
+    <div class="budgetMainText">The 50/30/20 budget splits your take-home income into three categories: 50% for needs, 30% for wants and 20% for savings and debt repayment.
+  <p></p>Enter your monthly after-tax income into this free budget calculator to generate a suggested budget.</div>
   </div>
-  <form id="budgetCalculator">
-      <label for="yearlyIncomeAfterTax">Yearly Income After Tax: </label>
-      <input
-        name="yearlyIncome"
-        type="text"
-        size="10"
-        id="yearlyincome"
-        placeholder="000000"
-      />
-    </p>
-    <input type="button" value="Enter!" id="Enter" />
-  </form>
-
-  <div id="suggestedBudget">
-    <b>Your 50/30/20 Budget:</b>
-    <div id="budgetresult">
-      <div id="necessities">
-        <div>Necessities:</div>
-        <div id="computednecessity"></div>
+    <form id="budgetCalculator">
+      <label for="name">Name: </label>
+      <input id="firstName" size="25" placeholder="Jane Doe"/>
+      <br>
+      <label for="income">Yearly Income After Tax: </label>
+        <input
+          name="yearlyIncome"
+          type="text"
+          size="15"
+          id="yearlyincome"
+          placeholder="50,000"
+        />
+        <br>
+        <label for="necessities">Necessities: </label>
+        <input id="firstName" size="15" placeholder="7,000"/>
+        <br>
+        <label for="wants">Wants: </label>
+        <input id="wants" size="15" placeholder="2,000"/>
+        <br>
+        <label for="savings">Savings & Debt Repairment: </label>
+        <input id="savings" size="13" placeholder="1,000"/>
+        <br>
+        <div class="generateButtonContainer">
+      <button type="button" id="Enter">Generate</button>
       </div>
-      <div id="Wants">
-        <div>Wants:</div>
-        <div id="computedwants"></div>
-      </div>
-      <div id="Savings">
-        <div>Savings:</div>
-        <div id="computedsavings"></div>
-      </div>
-    </div>
-  </div>
+    </form>
 </div>
 
 {% endblock %}
