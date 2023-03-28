@@ -1,11 +1,8 @@
 # budgie
 
-@Mari
-✓ Created flask server: to run the app type: python server.py in the terminal
-✓ Created html for index and layout
-✓ Created main CSS file
-✓ Created buttons and added routes in the server to redirect user to the pages.
-✓ created html files for two extra pages and adjusted the CSS of the application
+To run application: open the terminal and type: python server.py or python3 server.py - depending on your version of python.
+To run the budget calculator, you will need to connect to openAI by pasting your API key in the server.py file. (line: 9)
+
 
 @TODO:
 
