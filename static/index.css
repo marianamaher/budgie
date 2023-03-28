@@ -72,3 +72,16 @@
 #Enter{
     cursor: pointer;
 }
+.loadingDiv{
+    text-align: center;
+    font-size: 19px;
+    padding-left: 42%;
+}
+
+#loadingLogo{
+    width: 120px;
+}
+
+.resultDiv{
+    white-space: pre-line;
+}

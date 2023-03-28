@@ -1,38 +1,39 @@
 {% extends "layout.html" %} {% block content %}
 
 <!-- content goes here -->
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'budget.js') }}"></script>
+
 <div class="row budgetCalculatorContainer">
   <div>
     <h2><b>Budget Calculator</b></h2>
-    <div class="budgetMainText">The 50/30/20 budget splits your take-home income into three categories: 50% for needs, 30% for wants and 20% for savings and debt repayment.
+    <div class="budgetMainText">The 50/30/20 budget shows your take home income, and splits it into three categories: 50% for needs, 30% for wants and 20% for savings and debt repayment.
   <p></p>Enter your monthly after-tax income into this free budget calculator to generate a suggested budget.</div>
   </div>
     <form id="budgetCalculator">
       <label for="name">Name: </label>
       <input id="firstName" size="25" placeholder="Jane Doe"/>
       <br>
-      <label for="income">Yearly Income After Tax: </label>
+      <label for="name">State: </label>
+      <input id="state" size="15" placeholder="New York"/>
+      <br>
+      <label for="income">Yearly Income Pre-Tax: </label>
         <input
           name="yearlyIncome"
           type="text"
-          size="15"
-          id="yearlyincome"
+          size="11"
+          id="income"
           placeholder="50,000"
         />
         <br>
-        <label for="necessities">Necessities: </label>
-        <input id="firstName" size="15" placeholder="7,000"/>
-        <br>
-        <label for="wants">Wants: </label>
-        <input id="wants" size="15" placeholder="2,000"/>
-        <br>
-        <label for="savings">Savings & Debt Repairment: </label>
-        <input id="savings" size="13" placeholder="1,000"/>
+        <label for="necessities">Fixed Expenses: </label>
+        <input id="fixedExpenses" size="11" placeholder="7,000"/>
         <br>
         <div class="generateButtonContainer">
-      <button type="button" id="Enter">Generate</button>
+      <button type="submit" id="budgetButton">Generate</button>
       </div>
     </form>
 </div>
 
 {% endblock %}
+
