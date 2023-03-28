@@ -1,0 +1,63 @@
+body {
+    font-family: 'Palanquin', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6524a6;
+}
+
+header {
+    background-color: #4375a7;
+    color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+ol {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+figure {
+    margin-top: 40px;
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #999;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
