@@ -10,8 +10,5 @@
 @TODO:
 
 - eventually need to link "budgie extension" to the extension when it has been created
-- create form for budget
-- create tips page
+- edit tips page
 - create extension
-- link form to GPT
-- create results page for budget results
