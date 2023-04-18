@@ -1,13 +1,11 @@
 from pprint import pprint
 import re
 import textwrap as tw
-import openai
 from flask import Flask
 from flask import render_template
 from flask import Response, request, jsonify
 import os
 app = Flask(__name__)
-openai.api_key = os.environ.get('SECRET_KEY', 'API_KEY')
 
 # ROUTES
 
