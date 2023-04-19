@@ -1,57 +1,38 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Top 10 Tips for Young Adults to Start Saving</title>
-	<!-- this needs to be moved to index.css  -->
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<header>
-		<h2>Top 10 Tips for Young Adults to Start Saving</h1>
-	</header>
-
-    <figure>
-        <img src="https://navi.com/blog/wp-content/uploads/2022/06/personal-finance.jpg"alt="Piggy Bank" width="400">
-    </figure>
-	<main>
-		<section>
-			<h4>Why Saving is Important</h4>
-			<p>Saving money is an important habit to develop early on in life. It helps you achieve financial stability, plan for the future, and avoid debt. By making saving a priority, you can build a strong foundation for a successful financial future.</p>
-		</section>
-
-		<section>
-			<h4>10 Tips for Saving Money</h4>
-			<ol>
-				<li>Set a budget: Start by creating a budget and tracking your expenses. This will give you a better understanding of where your money is going, and help you identify areas where you can cut back and save more.</li>
-				<li>Prioritize saving: Make saving a priority and set a savings goal. This will give you a target to work towards, and help you stay motivated.</li>
-				<li>Automate savings: Set up automatic transfers to a savings account each month. This will help you save consistently and make it easier to stick to your budget.</li>
-                <figure>
-                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"alt="Piggy Bank" width="400">/>
-                </figure>
-
-				<li>Avoid debt: Avoid accumulating debt, especially high-interest credit card debt. If you do have debt, focus on paying it off as quickly as possible.</li>
-				<li>Start small: Start with small savings goals and gradually increase the amount you save over time. This will help you build a habit of saving and make it easier to save larger amounts later on.</li>
-				<li>Use technology: Use budgeting and savings apps to help you track your expenses and stay on top of your savings goals.</li>
-				<li>Look for ways to save: Look for ways to save money, such as buying used items, using coupons, and shopping for deals.</li>
-				<li>Maximize retirement savings: If your employer offers a retirement savings plan, such as a 401(k), make sure to contribute enough to take full advantage of any matching contributions.</li>
-				<li>Invest wisely: Consider investing in low-cost index funds or exchange-traded funds (ETFs) to help grow your savings over time.</li>
-				<li>Stay disciplined: Saving money requires discipline and commitment. Stay focused on your goals and be patient - the rewards will be worth it in the long run!</li>
-			</ol>
-		</section>
-
-		<section>
-			<h2>Conclusion</h2>
-			<p>By following these tips and making saving a priority, you can build a strong financial foundation for your future. Remember to stay disciplined, start small, and use technology to your advantage. With patience and dedication, you can achieve your savings goals and secure a bright financial future!</p>
-		</section>
-
-		<figure>
-			<img src="https://img.freepik.com/free-vector/woman-keeping-coin-with-piggy-bank-saving-money-concept-cute-cartoon-character-doodle-style_40876-3219.jpg?w=2000" alt="Saving money girl with piggy bank" width = "400"/>
-		</figure>
-        </main>
-</body>
+<div class="row indexContainer">
+	<div class="col-sm tipsPageMainCol">
+		<header>
+			<h1 id="Tipstitle"> Tips to Start Saving </h1>
+		</header>
+		<br>
+		<p class="savingMoneySection">Saving money is an important habit to develop early on in life. It helps you achieve financial stability, plan for the future, and avoid debt. By making saving a priority, you can build a strong foundation for a successful financial future.</p>
+		<div class="row tipsPageRow">
+			<div class="col-sm-7 tipsPageCol1">
+				<h4><img id="tips-img2" src="/static/images/coins.png" alt="bag full of coins"><b> 10 Tips for Saving Money</b></h4>
+				<ol>
+					<li><b>Set a budget:</b> Start by creating a budget here and tracking your expenses. This will give you a better understanding of where your money is going, and help you identify areas where you can cut back and save more.</li>
+					<li><b>Prioritize saving:</b> Make saving a priority and set a savings goal. This will give you a target to work towards, and help you stay motivated.</li>
+					<li><b>Automate savings:</b> Set up automatic transfers to a savings account each month. This will help you save consistently and make it easier to stick to your budget.</li>
+					<li><b>Avoid debt:</b> Avoid accumulating debt, especially high-interest credit card debt. If you do have debt, focus on paying it off as quickly as possible.</li>
+					<li><b>Start small:</b> Start with small savings goals and gradually increase the amount you save over time. This will help you build a habit of saving and make it easier to save larger amounts later on.</li>
+					<li><b>Use technology:</b> Use budgeting and savings apps to help you track your expenses and stay on top of your savings goals.</li>
+					<li><b>Look for ways to save:</b> Look for ways to save money, such as buying used items, using coupons, and shopping for deals.</li>
+					<li><b>Maximize retirement savings:</b> If your employer offers a retirement savings plan, such as a 401(k), make sure to contribute enough to take full advantage of any matching contributions.</li>
+					<li><b>Invest wisely:</b> Consider investing in low-cost index funds or exchange-traded funds (ETFs) to help grow your savings over time.</li>
+					<li><b>Stay disciplined:</b> Saving money requires discipline and commitment. Stay focused on your goals and be patient - the rewards will be worth it in the long run!</li>
+				</ol>
+			</div>
+			<div class="col-sm-4 tipsPageCol2">
+				<img id="tips-img1" src="/static/images/pigWithCoins.png" alt="pigbank with coins">
+			</div>
+		</div>
+		<div class="finalsection">
+		<p class="savingMoneySection">By following these tips and making saving a priority, you can build a strong financial foundation for your future. Remember to stay disciplined, start small, and use technology to your advantage. With patience and dedication, you can achieve your savings goals and secure a bright financial future!</p>
+		</div>
+	</div>
+</div>
 </html>
 
 
