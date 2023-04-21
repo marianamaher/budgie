@@ -29,6 +29,7 @@
     border-radius: 5px;
     font-size: 19px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 #savingTipsButton{
@@ -36,6 +37,7 @@
     height:40px;
     border-radius: 5px;
     font-size: 19px;
+    cursor: pointer;
 }
 
 #moneybag{
