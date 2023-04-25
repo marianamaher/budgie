@@ -37,7 +37,7 @@ $(document).ready(function(){
         $("#budgetButton").click(function(ev){
             ev.preventDefault();
             // getting form information
-            var username = $("#firstName").val();
+            var username = $("#name").val();
             let userState = $("#state").val();
             let userIncome = $("#income").val();
             let fixedExpenses = $("#fixedExpenses").val();
