@@ -32,7 +32,7 @@ function saveEntry(newEntryValue){
 
 $(document).ready(function(){
 
-    $("#firstName").focus();
+    $("#name").focus();
 
         $("#budgetButton").click(function(ev){
             ev.preventDefault();
@@ -46,7 +46,7 @@ $(document).ready(function(){
             let budgetInformation = {name: username, state: userState, income: userIncome, expenses: fixedExpenses}
 
             //calling a function to save the information and send it to the server
-            saveEntry( budgetInformation);
+            saveEntry(budgetInformation);
             // dealing with loading logo
             $(".budgetCalculatorContainer").empty();
             let tempDiv2 = ('<div class="loadingDiv"><img id="loadingLogo" src="/static/images/loading.gif"><br>Loading...</div>')
